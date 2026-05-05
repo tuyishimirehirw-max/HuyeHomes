@@ -28,6 +28,8 @@ app.use(helmet({
 // CORS configuration
 app.use(cors({
   origin: [
+    'https://huye-homes-cysx.vercel.app/',   // frontend domain
+    'https://huye-homes-vagd.vercel.app/login',    // admin domain
     process.env.FRONTEND_URL || 'http://localhost:3000',
     process.env.ADMIN_URL || 'http://localhost:3001',
     'http://localhost:5500', // For development
